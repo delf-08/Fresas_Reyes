@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!-- prefetch -->
+
+    <link rel="prefetch" href="entrada.html" as="document">
+
+    <!-- Preload -->
+
+    <link rel="preload" href="./css/normalize.css" as="style">
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Fresas-Reyes</title>
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="container">
+            <div class="navegator-log text-align">
+                <a href="index.html">
+                    <h1 class="navegator-log__name no-margin">Fresas<span class="navegator-log__name-bold">Reyes</span></h1>
+                </a>
+
+                <nav class="navegator-bar">
+                    <a href="nosotros.html" class="navegation-link">Nosotros</a>
+                    <a href="comprar.html" class="navegation-link">Comprar</a>
+                    <a href="contacto.html" class="navegation-link">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin text-align">Blog y Tienda de Mermelada de Fresa</h2>
+            <p class="text-align">Aprende de nosotros con una receta exclusiva y encuentra toda la información para adquirir nuestra deliciosa mermelada de fresa, convirtiendo cada cucharada en una experiencia única</p>
+        </div>
+
+    </header>
+
+    <div class="container principal-container">
+        <main class="blog text-align">
+            <h3>Nuestro Blog</h3>
+
+            <!-- 1st article -->
+            <article class="article">
+                <div class="article__image">
+                    <!-- el lazy loading hace que la imagen se descargue hasta que esta sea visible -->
+                    <picture>
+                        <img loading="lazy" src="./img/blogFresa1.jpg" alt="blog image">
+                    </picture>
+                </div>
+                <div class="article__content">
+                    <h4 class="no-margin">Calidad y procedencia de los ingredientes</h4>
+                    <P>En Reyes, la calidad de nuestros ingredientes es nuestra máxima prioridad. Seleccionamos las fresas más frescas y jugosas, cultivadas en campos locales y recogidas en el punto exacto de madurez. Cada fruta es inspeccionada minuciosamente para asegurar que cumpla con nuestros estrictos estándares de calidad. Utilizamos solo ingredientes naturales y frescos, sin aditivos ni conservantes artificiales, garantizando un producto final que no solo es delicioso, sino también seguro y saludable para toda la familia. Nuestro compromiso es ofrecerte una mermelada de fresa que combina el sabor auténtico de las fresas frescas con la tranquilidad de saber que estás consumiendo un producto elaborado con los mejores ingredientes disponibles.</P>
+                </div>
+                <!-- <a href="entrada.html" class="button primary-button">Leer Entrada</a> -->
+            </article> 
+
+            <!-- 2nd artcile -->
+            <article class="article">
+                <div class="article__image">
+                    <picture>
+                        <img loading="lazy" src="./img/blofFresa2.jpg" alt="blog image">
+                    </picture>
+                </div>
+                <div class="article__content">
+                    <h4 class="no-margin">Beneficios de la mermelada de fresa</h4>
+                    <P>La mermelada de fresa de Reyes no solo es deliciosa, sino que también está repleta de beneficios. Las fresas frescas que utilizamos son ricas en vitaminas, antioxidantes y fibra, contribuyendo a una dieta equilibrada y saludable. Nuestra mermelada, hecha sin conservantes ni aditivos artificiales, conserva el sabor natural y los nutrientes esenciales de las fresas, convirtiéndola en una opción nutritiva para ti y tu familia. Además, su versatilidad la hace perfecta para añadir un toque de dulzura natural a tus desayunos, postres y meriendas, proporcionando una fuente de energía y sabor en cada bocado. Con la mermelada de fresa de Reyes, puedes disfrutar de un producto que combina salud y sabor en un solo frasco.</P>
+                </div>
+                <!-- <a href="entrada.html" class="button primary-button">Leer Entrada</a> -->
+            </article>
+
+            <!-- 3rd article -->
+            <article class="article">
+                <div class="article__image">
+                    <picture>
+                        <img loading="lazy" src="./img/blogFresa4.jpg" alt="blog image">
+                    </picture>
+                </div>
+                <div class="article__content">
+                    <h4 class="no-margin">Receta de mermelada de fresa </h4>
+                    <P>Aquí te dejamos una receta casera de mermelada de fresa, fácil y efectiva, que podrás preparar cómodamente desde tu hogar.</P>
+                </div>
+                <!-- <a href="entrada.html" class="button primary-button">Leer Entrada</a> -->
+            </article>
+        </main>
+
+        <!-- <aside class="sidebar">
+            <h3 class="text-align">Nuestros Cursos y Talleres</h3>
+
+            <ul class="widget no-padding">
+                <li>
+                    <h4 class="widget__heading">Tecnicas de extraccion de cafe</h4>
+                    <p class="widget__text">Precio: <span class="widget__span">Gratis</span></p>
+                    <p class="widget__text">Cupo: <span class="widget__span">20</span></p>
+                    <a href="cursos.html" class="button secondary-button">Mas informacion</a>
+                </li>
+            </ul>
+
+            <ul class="widget no-padding">
+                <li>
+                    <h4 class="widget__heading">4 Recetas de cafe para principiantes</h4>
+                    <p class="widget__text">Precio: <span class="widget__span">Gratis</span></p>
+                    <p class="widget__text">Cupo: <span class="widget__span">20</span></p>
+                    <a href="cursos.html" class="button secondary-button">Mas informacion</a>
+                </li>
+            </ul>
+        </aside> -->
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="navegator-log text-align">
+                <a href="index.html">
+                    <h1 class="navegator-log__name no-margin">Fresas<span class="navegator-log__name-bold">Reyes</span></h1>
+                </a>
+
+                <nav class="navegator-bar">
+                    <a href="nosotros.html" class="navegation-link">Nosotros</a>
+                    <a href="comprar.html" class="navegation-link">Comprar</a>
+                    <a href="contacto.html" class="navegation-link">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+    </footer>
+    
+    <script src="./js/modernizr.js"></script>
+
+</body>
+</html>
